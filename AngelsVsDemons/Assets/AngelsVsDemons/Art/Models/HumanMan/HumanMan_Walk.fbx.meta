@@ -1,0 +1,723 @@
+fileFormatVersion: 2
+guid: cf54f37aa81a69147818d852e76c6724
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: HM_L_Ankle_Joint
+    100002: HM_L_Clavicle_Joint
+    100004: HM_L_Elbow_Joint
+    100006: HM_L_Finge_Middle_Joint
+    100008: HM_L_Finge_Middle_Tip_Joint
+    100010: HM_L_Finger_Joint
+    100012: HM_L_Knee_Joint
+    100014: HM_L_Shoulder_Joint
+    100016: HM_L_Thigh_Joint
+    100018: HM_L_Toe_Joint
+    100020: HM_L_Toetip_Joint
+    100022: HM_L_Wrist_Joint
+    100024: HM_R_Ankle_Joint
+    100026: HM_R_Clavicle_Joint
+    100028: HM_R_Elbow_Joint
+    100030: HM_R_Finge_Middle_Joint
+    100032: HM_R_Finge_Middle_Tip_Joint
+    100034: HM_R_Finger_Joint
+    100036: HM_R_Knee_Joint
+    100038: HM_R_Shoulder_Joint
+    100040: HM_R_Thigh_Joint
+    100042: HM_R_Toe_Joint
+    100044: HM_R_Toetip_Joint
+    100046: HM_R_Wrist_Joint
+    100048: HumanMan
+    100050: //RootNode
+    100052: joint1
+    100054: joint2
+    100056: joint3
+    100058: joint4
+    100060: joint5
+    100062: joint6
+    100064: joint7
+    100066: joint8
+    100068: joint9
+    400000: HM_L_Ankle_Joint
+    400002: HM_L_Clavicle_Joint
+    400004: HM_L_Elbow_Joint
+    400006: HM_L_Finge_Middle_Joint
+    400008: HM_L_Finge_Middle_Tip_Joint
+    400010: HM_L_Finger_Joint
+    400012: HM_L_Knee_Joint
+    400014: HM_L_Shoulder_Joint
+    400016: HM_L_Thigh_Joint
+    400018: HM_L_Toe_Joint
+    400020: HM_L_Toetip_Joint
+    400022: HM_L_Wrist_Joint
+    400024: HM_R_Ankle_Joint
+    400026: HM_R_Clavicle_Joint
+    400028: HM_R_Elbow_Joint
+    400030: HM_R_Finge_Middle_Joint
+    400032: HM_R_Finge_Middle_Tip_Joint
+    400034: HM_R_Finger_Joint
+    400036: HM_R_Knee_Joint
+    400038: HM_R_Shoulder_Joint
+    400040: HM_R_Thigh_Joint
+    400042: HM_R_Toe_Joint
+    400044: HM_R_Toetip_Joint
+    400046: HM_R_Wrist_Joint
+    400048: HumanMan
+    400050: //RootNode
+    400052: joint1
+    400054: joint2
+    400056: joint3
+    400058: joint4
+    400060: joint5
+    400062: joint6
+    400064: joint7
+    400066: joint8
+    400068: joint9
+    4300000: HumanMan
+    7400000: Walk
+    7400002: Idle
+    9500000: //RootNode
+    13700000: HumanMan
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 15
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: HumanMan
+        weight: 0
+      - path: joint1
+        weight: 1
+      - path: joint1/HM_L_Thigh_Joint
+        weight: 1
+      - path: joint1/HM_L_Thigh_Joint/HM_L_Knee_Joint
+        weight: 1
+      - path: joint1/HM_L_Thigh_Joint/HM_L_Knee_Joint/HM_L_Ankle_Joint
+        weight: 1
+      - path: joint1/HM_L_Thigh_Joint/HM_L_Knee_Joint/HM_L_Ankle_Joint/HM_L_Toe_Joint
+        weight: 1
+      - path: joint1/HM_L_Thigh_Joint/HM_L_Knee_Joint/HM_L_Ankle_Joint/HM_L_Toe_Joint/HM_L_Toetip_Joint
+        weight: 0
+      - path: joint1/HM_R_Thigh_Joint
+        weight: 1
+      - path: joint1/HM_R_Thigh_Joint/HM_R_Knee_Joint
+        weight: 1
+      - path: joint1/HM_R_Thigh_Joint/HM_R_Knee_Joint/HM_R_Ankle_Joint
+        weight: 1
+      - path: joint1/HM_R_Thigh_Joint/HM_R_Knee_Joint/HM_R_Ankle_Joint/HM_R_Toe_Joint
+        weight: 1
+      - path: joint1/HM_R_Thigh_Joint/HM_R_Knee_Joint/HM_R_Ankle_Joint/HM_R_Toe_Joint/HM_R_Toetip_Joint
+        weight: 0
+      - path: joint1/joint2
+        weight: 1
+      - path: joint1/joint2/joint3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_L_Clavicle_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_L_Clavicle_Joint/HM_L_Shoulder_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_L_Clavicle_Joint/HM_L_Shoulder_Joint/HM_L_Elbow_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_L_Clavicle_Joint/HM_L_Shoulder_Joint/HM_L_Elbow_Joint/HM_L_Wrist_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_L_Clavicle_Joint/HM_L_Shoulder_Joint/HM_L_Elbow_Joint/HM_L_Wrist_Joint/HM_L_Finger_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_L_Clavicle_Joint/HM_L_Shoulder_Joint/HM_L_Elbow_Joint/HM_L_Wrist_Joint/HM_L_Finger_Joint/HM_L_Finge_Middle_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_L_Clavicle_Joint/HM_L_Shoulder_Joint/HM_L_Elbow_Joint/HM_L_Wrist_Joint/HM_L_Finger_Joint/HM_L_Finge_Middle_Joint/HM_L_Finge_Middle_Tip_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_R_Clavicle_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_R_Clavicle_Joint/HM_R_Shoulder_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_R_Clavicle_Joint/HM_R_Shoulder_Joint/HM_R_Elbow_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_R_Clavicle_Joint/HM_R_Shoulder_Joint/HM_R_Elbow_Joint/HM_R_Wrist_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_R_Clavicle_Joint/HM_R_Shoulder_Joint/HM_R_Elbow_Joint/HM_R_Wrist_Joint/HM_R_Finger_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_R_Clavicle_Joint/HM_R_Shoulder_Joint/HM_R_Elbow_Joint/HM_R_Wrist_Joint/HM_R_Finger_Joint/HM_R_Finge_Middle_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_R_Clavicle_Joint/HM_R_Shoulder_Joint/HM_R_Elbow_Joint/HM_R_Wrist_Joint/HM_R_Finger_Joint/HM_R_Finge_Middle_Joint/HM_R_Finge_Middle_Tip_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 103
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: HumanMan
+        weight: 0
+      - path: joint1
+        weight: 1
+      - path: joint1/HM_L_Thigh_Joint
+        weight: 1
+      - path: joint1/HM_L_Thigh_Joint/HM_L_Knee_Joint
+        weight: 1
+      - path: joint1/HM_L_Thigh_Joint/HM_L_Knee_Joint/HM_L_Ankle_Joint
+        weight: 1
+      - path: joint1/HM_L_Thigh_Joint/HM_L_Knee_Joint/HM_L_Ankle_Joint/HM_L_Toe_Joint
+        weight: 1
+      - path: joint1/HM_L_Thigh_Joint/HM_L_Knee_Joint/HM_L_Ankle_Joint/HM_L_Toe_Joint/HM_L_Toetip_Joint
+        weight: 0
+      - path: joint1/HM_R_Thigh_Joint
+        weight: 1
+      - path: joint1/HM_R_Thigh_Joint/HM_R_Knee_Joint
+        weight: 1
+      - path: joint1/HM_R_Thigh_Joint/HM_R_Knee_Joint/HM_R_Ankle_Joint
+        weight: 1
+      - path: joint1/HM_R_Thigh_Joint/HM_R_Knee_Joint/HM_R_Ankle_Joint/HM_R_Toe_Joint
+        weight: 1
+      - path: joint1/HM_R_Thigh_Joint/HM_R_Knee_Joint/HM_R_Ankle_Joint/HM_R_Toe_Joint/HM_R_Toetip_Joint
+        weight: 0
+      - path: joint1/joint2
+        weight: 1
+      - path: joint1/joint2/joint3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_L_Clavicle_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_L_Clavicle_Joint/HM_L_Shoulder_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_L_Clavicle_Joint/HM_L_Shoulder_Joint/HM_L_Elbow_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_L_Clavicle_Joint/HM_L_Shoulder_Joint/HM_L_Elbow_Joint/HM_L_Wrist_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_L_Clavicle_Joint/HM_L_Shoulder_Joint/HM_L_Elbow_Joint/HM_L_Wrist_Joint/HM_L_Finger_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_L_Clavicle_Joint/HM_L_Shoulder_Joint/HM_L_Elbow_Joint/HM_L_Wrist_Joint/HM_L_Finger_Joint/HM_L_Finge_Middle_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_L_Clavicle_Joint/HM_L_Shoulder_Joint/HM_L_Elbow_Joint/HM_L_Wrist_Joint/HM_L_Finger_Joint/HM_L_Finge_Middle_Joint/HM_L_Finge_Middle_Tip_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_R_Clavicle_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_R_Clavicle_Joint/HM_R_Shoulder_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_R_Clavicle_Joint/HM_R_Shoulder_Joint/HM_R_Elbow_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_R_Clavicle_Joint/HM_R_Shoulder_Joint/HM_R_Elbow_Joint/HM_R_Wrist_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_R_Clavicle_Joint/HM_R_Shoulder_Joint/HM_R_Elbow_Joint/HM_R_Wrist_Joint/HM_R_Finger_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_R_Clavicle_Joint/HM_R_Shoulder_Joint/HM_R_Elbow_Joint/HM_R_Wrist_Joint/HM_R_Finger_Joint/HM_R_Finge_Middle_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/HM_R_Clavicle_Joint/HM_R_Shoulder_Joint/HM_R_Elbow_Joint/HM_R_Wrist_Joint/HM_R_Finger_Joint/HM_R_Finge_Middle_Joint/HM_R_Finge_Middle_Tip_Joint
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: joint1
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_L_Thigh_Joint
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_R_Thigh_Joint
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_L_Knee_Joint
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_R_Knee_Joint
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_L_Ankle_Joint
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_R_Ankle_Joint
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint2
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint5
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint6
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint7
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_L_Clavicle_Joint
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_R_Clavicle_Joint
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_L_Shoulder_Joint
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_R_Shoulder_Joint
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_L_Elbow_Joint
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_R_Elbow_Joint
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_L_Wrist_Joint
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_R_Wrist_Joint
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_L_Toe_Joint
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_R_Toe_Joint
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint8
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_R_Finger_Joint
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_R_Finge_Middle_Joint
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_R_Finge_Middle_Tip_Joint
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_L_Finger_Joint
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_L_Finge_Middle_Joint
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HM_L_Finge_Middle_Tip_Joint
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: HumanMan_Walk(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HumanMan
+      position: {x: 0, y: .0108699799, z: 14.2564487}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint1
+      position: {x: 4.93038066e-32, y: 3.89553952, z: -.197448492}
+      rotation: {x: -.435763776, y: .556875169, z: -.435763776, w: .556875169}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_L_Thigh_Joint
+      position: {x: -.319550127, y: -.0665715933, z: -.598779023}
+      rotation: {x: .14116025, y: .98977524, z: -9.99051481e-05, w: -.0204650033}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_L_Knee_Joint
+      position: {x: -2.15604758, y: 1.90057477e-07, z: -6.62123114e-07}
+      rotation: {x: -6.71430778e-09, y: -8.27783175e-10, z: -.128105029, w: .991760612}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_L_Ankle_Joint
+      position: {x: -1.78253496, y: 2.30051242e-07, z: 9.23050891e-07}
+      rotation: {x: .742837191, y: .669471741, z: -.000548843003, w: .000577453407}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_L_Toe_Joint
+      position: {x: -.615809858, y: -3.13318907e-07, z: 7.12661929e-08}
+      rotation: {x: -.000128470856, y: .000817828113, z: -.12237417, w: .992483735}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_L_Toetip_Joint
+      position: {x: -.504191875, y: -2.58520032e-07, z: -2.10481835e-06}
+      rotation: {x: -.0230211541, y: -.706731975, z: -.0230211541, w: .706731975}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_R_Thigh_Joint
+      position: {x: -.319550127, y: -.0665715933, z: .598779023}
+      rotation: {x: .99000144, y: -.139701501, z: .0195122194, w: -6.52599556e-05}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_R_Knee_Joint
+      position: {x: 2.15604758, y: -1.90057477e-07, z: 6.62123114e-07}
+      rotation: {x: 2.6987875e-08, y: 2.38456778e-07, z: -.123119123, w: .992391944}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_R_Ankle_Joint
+      position: {x: 1.78253496, y: -2.30051242e-07, z: -9.23050891e-07}
+      rotation: {x: .743674695, y: .668536365, z: -.00213876623, w: .00158533931}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_R_Toe_Joint
+      position: {x: .615809858, y: 3.13318907e-07, z: -6.96094489e-08}
+      rotation: {x: -.000429309497, y: .00264455238, z: -.128613427, w: .991691172}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_R_Toetip_Joint
+      position: {x: .504191875, y: 2.58520032e-07, z: 2.10640906e-06}
+      rotation: {x: -.0230211541, y: -.706731975, z: -.0230211541, w: .706731975}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint2
+      position: {x: -.837037265, y: 1.38777878e-16, z: 3.71719218e-16}
+      rotation: {x: 1.71200036e-16, y: -7.31935e-17, z: .040773429, w: .999168456}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint3
+      position: {x: -.526072383, y: 0, z: 2.38912869e-16}
+      rotation: {x: 1.09616274e-16, y: -1.76131469e-17, z: -.156295493, w: .987710357}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint4
+      position: {x: -.686412454, y: 1.94289029e-16, z: 2.83697513e-16}
+      rotation: {x: .95657897, y: -.291473418, z: 1.01034275e-16, w: 9.47973467e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint5
+      position: {x: -.82331717, y: -1.66533454e-16, z: -1.90576113e-16}
+      rotation: {x: .946411431, y: -.322963476, z: -1.97758089e-17, w: 5.79509899e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_L_Clavicle_Joint
+      position: {x: -.191950664, y: .0438288189, z: -.460019857}
+      rotation: {x: -.381964177, y: .595065892, z: -.551810384, w: -.442159772}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_L_Shoulder_Joint
+      position: {x: -.584441781, y: -5.55111512e-17, z: 0}
+      rotation: {x: 3.22374376e-08, y: 1.99434069e-08, z: -.198923647, w: .980015039}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_L_Elbow_Joint
+      position: {x: -1.20520282, y: -1.94289029e-16, z: 0}
+      rotation: {x: 0, y: 0, z: .0328123458, w: .999461532}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_L_Wrist_Joint
+      position: {x: -1.16109931, y: -7.07767178e-16, z: 0}
+      rotation: {x: 0, y: -0, z: -.011496868, w: .999933898}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_L_Finger_Joint
+      position: {x: -.499795854, y: .0124302153, z: 2.77555756e-17}
+      rotation: {x: 0, y: 0, z: .0256938711, w: .99966985}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_L_Finge_Middle_Joint
+      position: {x: -.206240654, y: -7.80625564e-17, z: 0}
+      rotation: {x: 0, y: -0, z: -.0117157539, w: .999931395}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_L_Finge_Middle_Tip_Joint
+      position: {x: -.260138452, y: -3.12250226e-17, z: 0}
+      rotation: {x: 0, y: -0, z: -.00769162504, w: .999970436}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_R_Clavicle_Joint
+      position: {x: -.19195509, y: .0438291728, z: .460020006}
+      rotation: {x: -.595064104, y: -.381967008, z: -.442162395, w: .551808298}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_R_Shoulder_Joint
+      position: {x: .584443808, y: 4.6560308e-06, z: 6.9388939e-14}
+      rotation: {x: 6.57147012e-08, y: 2.53076049e-08, z: -.198917821, w: .980016232}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_R_Elbow_Joint
+      position: {x: 1.20520711, y: -2.05716105e-06, z: -9.40630152e-09}
+      rotation: {x: 0, y: 0, z: .0328123458, w: .999461532}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_R_Wrist_Joint
+      position: {x: 1.161093, y: 5.93717778e-06, z: -8.07569034e-09}
+      rotation: {x: 0, y: -0, z: -.011496868, w: .999933898}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_R_Finger_Joint
+      position: {x: .499795943, y: -.0124347396, z: -3.78859388e-09}
+      rotation: {x: 1.0617744e-08, y: 2.72901063e-10, z: .0256938711, w: .99966985}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_R_Finge_Middle_Joint
+      position: {x: .206245214, y: -3.49251309e-06, z: -1.35671696e-09}
+      rotation: {x: 0, y: -0, z: -.0117157539, w: .999931395}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HM_R_Finge_Middle_Tip_Joint
+      position: {x: .260140896, y: 8.30670888e-06, z: -1.66290348e-09}
+      rotation: {x: 0, y: -0, z: -.00769162504, w: .999970436}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint6
+      position: {x: -.28481555, y: -6.0368377e-16, z: 9.96115378e-17}
+      rotation: {x: 0, y: 0, z: .10402222, w: .994574964}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint7
+      position: {x: -.287429422, y: 1.2490009e-16, z: 9.54746752e-17}
+      rotation: {x: 0, y: -0, z: -.126129299, w: .992013812}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint8
+      position: {x: -.548734486, y: 2.49800181e-16, z: 1.92905163e-16}
+      rotation: {x: 0, y: 0, z: .0379541367, w: .999279499}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint9
+      position: {x: -.531598032, y: 4.16333634e-17, z: 1.85022304e-16}
+      rotation: {x: .464792699, y: -.532886267, z: .464792699, w: .532886267}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  userData: 
