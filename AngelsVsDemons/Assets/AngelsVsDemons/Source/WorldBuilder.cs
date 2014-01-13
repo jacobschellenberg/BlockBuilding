@@ -20,6 +20,13 @@ public class WorldBuilder : MonoBehaviour {
 
 	static public float TimeUntilSave{get;set;}
 
+	void OnConnectedToServer(){
+		if(!playerSpawned){
+			Instantiate(playerPrefab, new Vector3(0,10,0), Quaternion.identity);
+			playerSpawned = true;
+		}
+	}
+
 	void Awake(){
 		Application.runInBackground = runInBackground;
 		StartCoroutine("LoadWorld");
@@ -45,7 +52,7 @@ public class WorldBuilder : MonoBehaviour {
 	}
 	
 	void SaveWorld(){
-		Debug.Log("SAVING WORLD");
+		//Debug.Log("SAVING WORLD");
 
 		foreach(Block block in blocks){
 			BlockTransport transport = new BlockTransport(){
@@ -65,7 +72,7 @@ public class WorldBuilder : MonoBehaviour {
 		js.Serialize(blockTransports);
 		blockTransports.Clear();
 
-		Debug.Log("WORLD SAVED");
+		//Debug.Log("WORLD SAVED");
 	}
 	
 	IEnumerator LoadWorld(){
@@ -92,11 +99,7 @@ public class WorldBuilder : MonoBehaviour {
 
 			currentIndex++;
 		}
-
-		if(!playerSpawned){
-			Instantiate(playerPrefab, new Vector3(0,10,0), Quaternion.identity);
-			playerSpawned = true;
-		}
+	
 		Debug.Log("BLOCKS: " + blocks.Count);
 
 		yield return null;

@@ -8,15 +8,21 @@ public class HUD : MonoBehaviour {
 
 	PlayerController player;
 
-	void Start(){
-		if(player == null){
-			StartCoroutine("FindPlayer");
-		}
-	}
+//	void Start(){
+//		if(player == null){
+//			StartCoroutine("FindPlayer");
+//		}
+//	}
 
 	void Update(){
 		if(Input.GetKeyDown(KeyCode.Escape)){
 			Screen.lockCursor = !Screen.lockCursor;
+		}
+	}
+
+	void OnConnectedToServer(){
+		if(player == null){
+			StartCoroutine("FindPlayer");
 		}
 	}
 
