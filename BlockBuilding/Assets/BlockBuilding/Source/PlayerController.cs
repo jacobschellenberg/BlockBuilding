@@ -37,7 +37,8 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator _SetBlock()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        var centerScreen = new Vector2(Screen.width / 2, Screen.height / 2);
+        Ray ray = Camera.main.ScreenPointToRay(centerScreen);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, _checkDistance))
@@ -54,7 +55,7 @@ public class PlayerController : MonoBehaviour
                     {
                         GameObject block = (GameObject)Instantiate(_blockPrefab.gameObject, new Vector3(hit.collider.bounds.center.x + 1, hit.collider.bounds.center.y, hit.collider.bounds.center.z), Quaternion.identity);
                         block.GetComponent<Block>().Owners.Add(_playerName);
-                        WorldBuilder.blocks.Add(block.GetComponent<Block>());
+                        //WorldBuilder.blocks.Add(block.GetComponent<Block>());
                     }
                 }
                 else if (hit.normal.x < 0)
@@ -64,7 +65,7 @@ public class PlayerController : MonoBehaviour
                     {
                         GameObject block = (GameObject)Instantiate(_blockPrefab.gameObject, new Vector3(hit.collider.bounds.center.x - 1, hit.collider.bounds.center.y, hit.collider.bounds.center.z), Quaternion.identity);
                         block.GetComponent<Block>().Owners.Add(_playerName);
-                        WorldBuilder.blocks.Add(block.GetComponent<Block>());
+                        //WorldBuilder.blocks.Add(block.GetComponent<Block>());
                     }
                 }
                 else if (hit.normal.y > 0)
@@ -74,7 +75,7 @@ public class PlayerController : MonoBehaviour
                     {
                         GameObject block = (GameObject)Instantiate(_blockPrefab.gameObject, new Vector3(hit.collider.bounds.center.x, hit.collider.bounds.center.y + 1, hit.collider.bounds.center.z), Quaternion.identity);
                         block.GetComponent<Block>().Owners.Add(_playerName);
-                        WorldBuilder.blocks.Add(block.GetComponent<Block>());
+                        //WorldBuilder.blocks.Add(block.GetComponent<Block>());
                     }
                 }
                 else if (hit.normal.y < 0)
@@ -84,7 +85,7 @@ public class PlayerController : MonoBehaviour
                     {
                         GameObject block = (GameObject)Instantiate(_blockPrefab.gameObject, new Vector3(hit.collider.bounds.center.x, hit.collider.bounds.center.y - 1, hit.collider.bounds.center.z), Quaternion.identity);
                         block.GetComponent<Block>().Owners.Add(_playerName);
-                        WorldBuilder.blocks.Add(block.GetComponent<Block>());
+                        //WorldBuilder.blocks.Add(block.GetComponent<Block>());
                     }
                 }
                 else if (hit.normal.z > 0)
@@ -94,7 +95,7 @@ public class PlayerController : MonoBehaviour
                     {
                         GameObject block = (GameObject)Instantiate(_blockPrefab.gameObject, new Vector3(hit.collider.bounds.center.x, hit.collider.bounds.center.y, hit.collider.bounds.center.z + 1), Quaternion.identity);
                         block.GetComponent<Block>().Owners.Add(_playerName);
-                        WorldBuilder.blocks.Add(block.GetComponent<Block>());
+                        //WorldBuilder.blocks.Add(block.GetComponent<Block>());
                     }
                 }
                 else if (hit.normal.z < 0)
@@ -104,7 +105,7 @@ public class PlayerController : MonoBehaviour
                     {
                         GameObject block = (GameObject)Instantiate(_blockPrefab.gameObject, new Vector3(hit.collider.bounds.center.x, hit.collider.bounds.center.y, hit.collider.bounds.center.z - 1), Quaternion.identity);
                         block.GetComponent<Block>().Owners.Add(_playerName);
-                        WorldBuilder.blocks.Add(block.GetComponent<Block>());
+                        //WorldBuilder.blocks.Add(block.GetComponent<Block>());
                     }
                 }
             }

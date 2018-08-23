@@ -11,108 +11,108 @@ public enum BlockType
 public class WorldBuilder : MonoBehaviour
 {
 
-    public GameObject playerPrefab;
-    public bool runInBackground = true;
-    static public List<Block> blocks = new List<Block>();
+    //public GameObject playerPrefab;
+    //public bool runInBackground = true;
+    //static public List<Block> blocks = new List<Block>();
 
-    private bool playerSpawned = false;
-    private int currentIndex = 0;
-    private List<BlockTransport> blockTransports = new List<BlockTransport>();
-    private float saveTime = 10;
+    //private bool playerSpawned = false;
+    //private int currentIndex = 0;
+    //private List<BlockTransport> blockTransports = new List<BlockTransport>();
+    //private float saveTime = 10;
 
-    static public float TimeUntilSave { get; set; }
+    //static public float TimeUntilSave { get; set; }
 
-    void Awake()
-    {
-        Application.runInBackground = runInBackground;
-        StartCoroutine("LoadWorld");
-    }
+    //void Awake()
+    //{
+    //    Application.runInBackground = runInBackground;
+    //    StartCoroutine("LoadWorld");
+    //}
 
-    void Update()
-    {
-        TimeUntilSave -= Time.deltaTime;
-        //Debug.Log("SAVE TIME: " + TimeUntilSave);
+    //void Update()
+    //{
+    //    TimeUntilSave -= Time.deltaTime;
+    //    //Debug.Log("SAVE TIME: " + TimeUntilSave);
 
-        if (TimeUntilSave <= 0)
-        {
-            SaveWorld();
-            TimeUntilSave = saveTime;
-        }
-    }
+    //    if (TimeUntilSave <= 0)
+    //    {
+    //        SaveWorld();
+    //        TimeUntilSave = saveTime;
+    //    }
+    //}
 
-    void FixedUpdate()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            StartCoroutine("LoadWorld");
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            SaveWorld();
-        }
-    }
+    //void FixedUpdate()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Alpha1))
+    //    {
+    //        StartCoroutine("LoadWorld");
+    //    }
+    //    if (Input.GetKeyDown(KeyCode.Alpha2))
+    //    {
+    //        SaveWorld();
+    //    }
+    //}
 
-    void SaveWorld()
-    {
-        Debug.Log("SAVING WORLD");
+    //void SaveWorld()
+    //{
+    //    Debug.Log("SAVING WORLD");
 
-        foreach (Block block in blocks)
-        {
-            BlockTransport transport = new BlockTransport()
-            {
-                HitPoints = block.HitPoints,
-                BlockType = block.BlockType,
-                X = block.transform.position.x,
-                Y = block.transform.position.y,
-                Z = block.transform.position.z,
-                Owners = block.Owners
-            };
+    //    foreach (Block block in blocks)
+    //    {
+    //        BlockTransport transport = new BlockTransport()
+    //        {
+    //            HitPoints = block.HitPoints,
+    //            BlockType = block.BlockType,
+    //            X = block.transform.position.x,
+    //            Y = block.transform.position.y,
+    //            Z = block.transform.position.z,
+    //            Owners = block.Owners
+    //        };
 
-            blockTransports.Add(transport);
+    //        blockTransports.Add(transport);
 
-        }
+    //    }
 
-        JSONSerializer js = new JSONSerializer();
-        js.Serialize(blockTransports);
-        blockTransports.Clear();
+    //    JSONSerializer js = new JSONSerializer();
+    //    js.Serialize(blockTransports);
+    //    blockTransports.Clear();
 
-        Debug.Log("WORLD SAVED");
-    }
+    //    Debug.Log("WORLD SAVED");
+    //}
 
-    IEnumerator LoadWorld()
-    {
-        JSONSerializer serializer = new JSONSerializer();
-        List<BlockTransport> transports = serializer.Deserialize();
-        Debug.Log("TRANSPORTS: " + transports.Count);
-        Debug.Log("BLOCKS: " + blocks.Count);
-        currentIndex = 0;
+    //IEnumerator LoadWorld()
+    //{
+    //    JSONSerializer serializer = new JSONSerializer();
+    //    List<BlockTransport> transports = serializer.Deserialize();
+    //    Debug.Log("TRANSPORTS: " + transports.Count);
+    //    Debug.Log("BLOCKS: " + blocks.Count);
+    //    currentIndex = 0;
 
-        //		foreach(BlockTransport transport in transports){
-        while (currentIndex < transports.Count)
-        {
-            BlockTransport transport = new BlockTransport();
-            transport = transports[currentIndex];
+    //    //		foreach(BlockTransport transport in transports){
+    //    while (currentIndex < transports.Count)
+    //    {
+    //        BlockTransport transport = new BlockTransport();
+    //        transport = transports[currentIndex];
 
-            Vector3 position = new Vector3(transport.X, transport.Y, transport.Z);
+    //        Vector3 position = new Vector3(transport.X, transport.Y, transport.Z);
 
-            GameObject block = (GameObject)Instantiate((GameObject)Resources.Load("Block"), position, Quaternion.identity);
+    //        GameObject block = (GameObject)Instantiate((GameObject)Resources.Load("Block"), position, Quaternion.identity);
 
-            blocks.Add(block.GetComponent<Block>());
-            block.GetComponent<Block>().Position = new Vector3(transport.X, transport.Y, transport.Z);
-            block.GetComponent<Block>().HitPoints = transport.HitPoints;
-            block.GetComponent<Block>().Owners = transport.Owners;
-            block.GetComponent<Block>().BlockType = transport.BlockType;
+    //        blocks.Add(block.GetComponent<Block>());
+    //        block.GetComponent<Block>().Position = new Vector3(transport.X, transport.Y, transport.Z);
+    //        block.GetComponent<Block>().HitPoints = transport.HitPoints;
+    //        block.GetComponent<Block>().Owners = transport.Owners;
+    //        block.GetComponent<Block>().BlockType = transport.BlockType;
 
-            currentIndex++;
-        }
+    //        currentIndex++;
+    //    }
 
-        if (!playerSpawned)
-        {
-            Instantiate(playerPrefab, new Vector3(0, 10, 0), Quaternion.identity);
-            playerSpawned = true;
-        }
-        Debug.Log("BLOCKS: " + blocks.Count);
+    //    if (!playerSpawned)
+    //    {
+    //        Instantiate(playerPrefab, new Vector3(0, 10, 0), Quaternion.identity);
+    //        playerSpawned = true;
+    //    }
+    //    Debug.Log("BLOCKS: " + blocks.Count);
 
-        yield return null;
-    }
+    //    yield return null;
+    //}
 }
