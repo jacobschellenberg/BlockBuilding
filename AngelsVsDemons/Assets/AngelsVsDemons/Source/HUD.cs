@@ -1,69 +1,51 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
-public class HUD : MonoBehaviour {
+public class HUD : MonoBehaviour
+{
+    [SerializeField] private Text _locationLabel;
+    [SerializeField] private PlayerController _player;
 
-	public UILabel locationLabel;
-	public UILabel nextSaveTimeLabel;
+    private void Start()
+    {
+        FocusMouse(true);
+    }
 
-	PlayerController player;
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
 
-	void Start(){
-		if(player == null){
-			StartCoroutine("FindPlayer");
-		}
-	}
+        _locationLabel.text = string.Format("Coordinates: ({0:0.00}, {1:0.00}, {2:0.00})", _player.transform.position.x, _player.transform.position.y, _player.transform.position.z);
+    }
 
-	void Update(){
-		if(Input.GetKeyDown(KeyCode.Escape)){
-			Screen.lockCursor = !Screen.lockCursor;
-		}
-	}
+    private void OnApplicationFocus(bool focusStatus)
+    {
+        FocusMouse(focusStatus);
+    }
 
-	void FixedUpdate(){
-		if(player != null){
-			StartCoroutine("UpdateLocation");
-		}
+    private void FocusMouse(bool focusStatus)
+    {
+        StartCoroutine(_FocusMouse(focusStatus));
+    }
 
-		StartCoroutine("UpdateNextSaveLabel");
-	}
+    private IEnumerator _FocusMouse(bool focusStatus)
+    {
+        yield return new WaitForEndOfFrame();
 
-	IEnumerator UpdateLocation(){
-		if(player != null){
-			locationLabel.text = string.Format("Coordinates: ({0:00},{1:00},{2:00})", player.transform.position.x, player.transform.position.y, player.transform.position.z);
-		}
-
-		yield return null;
-	}
-
-	IEnumerator UpdateNextSaveLabel(){
-		nextSaveTimeLabel.text = string.Format("Next Save: {0:0}", WorldBuilder.TimeUntilSave);
-
-		yield return null;
-	}
-
-	IEnumerator FindPlayer(){
-		while(player == null){
-			player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-			yield return null;
-		}
-	}
-
-	IEnumerator FocusMouse(bool focusStatus){
-		if(focusStatus){
-			Debug.Log("FOCUSED");
-			yield return new WaitForSeconds(0.1f);
-			Screen.lockCursor = true;
-		}
-		else{
-			Debug.Log("LOST FOCUS");
-			Screen.lockCursor = false;
-		}
-
-		yield return null;
-	}
-
-	void OnApplicationFocus(bool focusStatus){
-		StartCoroutine("FocusMouse", focusStatus);
-	}
+        if (focusStatus)
+        {
+            Debug.Log("FOCUSED");
+            yield return new WaitForSeconds(0.1f);
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        else
+        {
+            Debug.Log("LOST FOCUS");
+            Cursor.lockState = CursorLockMode.None;
+        }
+    }
 }

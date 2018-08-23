@@ -1,25 +1,27 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 
-public class Block : MonoBehaviour {
-	
-	public float hitPoints = 1;
-	public BlockType blockType = BlockType.Dirt;
-	public Vector3 position;
-	public List<string> owners = new List<string>();
+public class Block : MonoBehaviour
+{
+    public float HitPoints { get { return _hitPoints; } set { _hitPoints = value; } }
+    public BlockType BlockType { get { return _blockType; } set { _blockType = value; } }
+    public Vector3 Position { get { return _position; } set { _position = value; } }
+    public List<string> Owners { get { return _owners; } set { _owners = value; } }
 
-	void Start(){
-		renderer.material = blockType == BlockType.Dirt ? (Material)Resources.Load("Dirt") : blockType == BlockType.Water ? (Material)Resources.Load("Water") : null;
-	}
-	
-	public void BlockHit(){
-		hitPoints--;
+    [SerializeField] private float _hitPoints = 1;
+    [SerializeField] private BlockType _blockType = BlockType.Dirt;
+    [SerializeField] private Vector3 _position;
+    [SerializeField] private List<string> _owners = new List<string>();
 
-		if(hitPoints <= 0){
-			WorldBuilder.blocks.Remove(this);
-			Debug.Log("BLOCKS: " + WorldBuilder.blocks.Count);
-			Destroy(gameObject);
-		}
-	}
+    public void Hit()
+    {
+        _hitPoints--;
+
+        if (_hitPoints <= 0)
+        {
+            //WorldBuilder.blocks.Remove(this);
+            //Debug.Log("BLOCKS: " + WorldBuilder.blocks.Count);
+            Destroy(gameObject);
+        }
+    }
 }

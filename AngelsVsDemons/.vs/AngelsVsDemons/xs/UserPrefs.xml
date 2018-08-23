@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{671C7417-14F6-07CA-07FE-226929D4569D}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/AngelsVsDemons/Source/WorldBuilder.cs">
+    <Files>
+      <File FileName="Assets/AngelsVsDemons/Source/HUD.cs" Line="23" Column="6" />
+      <File FileName="Assets/AngelsVsDemons/Source/PlayerController.cs" Line="27" Column="5" />
+      <File FileName="Assets/AngelsVsDemons/Source/Block.cs" Line="12" Column="5" />
+      <File FileName="Assets/AngelsVsDemons/Source/WorldBuilder.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
